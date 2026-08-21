@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-fb-dark bg-white font-sans text-sm md:text-base selection:bg-fb-teal selection:text-white;
+  }
+}
+
+.nav-dropdown {
+  @apply opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out absolute top-full left-0 bg-white shadow-xl border border-gray-100 rounded-b-md z-50 min-w-[220px];
+}
+
+.btn-main {
+  @apply bg-fb-teal text-white hover:bg-fb-teal-dark transition-colors font-semibold px-6 py-2.5 rounded text-sm uppercase tracking-wide inline-block text-center;
+}
+
+.btn-outline {
+  @apply border-2 border-fb-dark text-fb-dark hover:bg-fb-dark hover:text-white transition-colors font-semibold px-6 py-2.5 rounded text-sm uppercase tracking-wide inline-block text-center;
+}
+
+.btn-white {
+  @apply bg-white text-fb-dark hover:bg-gray-100 transition-colors font-semibold px-6 py-2.5 rounded text-sm uppercase tracking-wide inline-block text-center;
+}
+
+/* Custom scrollbar for filter drawer */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
